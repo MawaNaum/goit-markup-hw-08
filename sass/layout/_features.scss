@@ -1,0 +1,43 @@
+.feature {
+    background-color: var(--third-color);
+
+    align-items: center;
+}
+
+.feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature__item {
+    width: 270px;
+}
+
+.feature__title {
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.feature__text {
+    line-height: 1.71;
+    color: var(--second-color);
+}
+
+.feature__picture {
+    background-color: var(--background-color);
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__icon {
+    width: 70px;
+    height: 70px;
+}
