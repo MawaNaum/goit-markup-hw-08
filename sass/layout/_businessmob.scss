@@ -1,0 +1,43 @@
+@media screen and (max-width: 767px) {
+    .business {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .business {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .business {
+        display: block;
+        background-color: var(--third-color);
+        padding-top: 0;
+    }
+}
+
+.business__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.business__item {
+    position: relative;
+}
+
+.business__text {
+    position: absolute;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--third-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+}
