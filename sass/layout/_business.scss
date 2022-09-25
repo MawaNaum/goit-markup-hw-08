@@ -1,14 +1,21 @@
-.business {
-    background-color: var(--third-color);
-    padding-top: 0;
+@media screen and (max-width: 767px) {
+    .business {
+        display: none;
+    }
 }
 
-.section__title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+@media screen and (min-width: 768px) {
+    .business {
+        display: none;
+    }
+}
 
-    margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+    .business {
+        display: block;
+        background-color: var(--third-color);
+        padding-top: 0;
+    }
 }
 
 .business__list {

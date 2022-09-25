@@ -61,6 +61,21 @@
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
     }
+
+    @media screen and (max-width: 1199px) {
+        &::placeholder {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+        }
+    }
+
 }
 
 .modal__input-wrapper {
@@ -90,10 +105,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1.71;
     color: var(--second-color);
 
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+    .modal__check {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal__check {
+        line-height: 1.71;
+    }
 }
 
 .modal__terms {
