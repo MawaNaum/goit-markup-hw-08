@@ -1088,26 +1088,16 @@ screen
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .footer__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer__block:not(:last-child) {
-    margin-bottom: 60px;
-  }
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .footer__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer__block:not(:last-child) {
-    margin-bottom: 60px;
-  }
+
+.footer__block:not(:last-child) {
+  margin-bottom: 60px;
 }
+
 @media screen and (min-width: 1200px) {
   .footer__block {
     display: flex;
@@ -1118,18 +1108,15 @@ screen
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
-  }
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
 }
+
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: flex;
-    align-items: baseline;
     justify-content: space-between;
   }
 }
@@ -1147,13 +1134,9 @@ screen
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding-left: 0;
   margin-top: 20px;
+  align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
-  .address {
-    align-items: center;
-  }
-}
 @media screen and (min-width: 1200px) {
   .address {
     align-items: flex-start;
@@ -1225,6 +1208,7 @@ screen
   border-radius: 4px;
   height: 50px;
   display: block;
+  width: 450px;
 }
 .subscribe-form__input-block:focus {
   outline: none;
@@ -1234,16 +1218,6 @@ screen
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 480px) {
-  .subscribe-form__input-block {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .subscribe-form__input-block {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscribe-form__input-block {
     width: 358px;
