@@ -1318,17 +1318,40 @@ screen
 
 .project__item {
   background: var(--third-color);
-  width: 370px;
+  width: 450px;
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration-function);
 }
 .project__link:hover, .project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project__picture {
+  width: 450px;
+  height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .project__item {
+    width: 354px;
+  }
+  .project__picture {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: 370px;
+  }
+  .project__picture {
+    width: 370px;
+  }
+}
 .project__description {
   padding-left: 24px;
   padding-right: 24px;
@@ -1337,6 +1360,7 @@ screen
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
+  flex-grow: 1;
 }
 
 .project__title {
