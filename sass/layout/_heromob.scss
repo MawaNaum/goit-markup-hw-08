@@ -141,7 +141,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
     &:hover,
     &:focus {
-        background: #188CE8;
+        background: var(--accent-hover-color);
     }
 }
 

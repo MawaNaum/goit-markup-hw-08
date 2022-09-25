@@ -4,6 +4,7 @@
   --third-color: #FFFFFF;
   --fourth-color: #AFB1B8;
   --accent-color: #2196F3;
+  --accent-hover-color: #188CE8;
   --background-color: #F5F4FA;
   --second-background: #2F303A;
   --third-background: #F5F5F5;
@@ -410,7 +411,7 @@ button {
   transition: background-color var(--transition-duration-function);
 }
 .modal__submit-button:hover, .modal__submit-button:focus {
-  background: #188CE8;
+  background: var(--accent-hover-color);
 }
 
 .header {
@@ -545,7 +546,7 @@ button {
   transition: background-color var(--transition-duration-function);
 }
 .hero__button:hover, .hero__button:focus {
-  background: #188CE8;
+  background: var(--accent-hover-color);
 }
 
 .feature {
@@ -815,7 +816,7 @@ button {
   transition: background-color var(--transition-duration-function);
 }
 .subscribe-form__button:hover, .subscribe-form__button:focus {
-  background: #188CE8;
+  background: var(--accent-hover-color);
 }
 
 .subscribe-form__button-icon {

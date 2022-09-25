@@ -131,7 +131,7 @@
 
     &:hover,
     &:focus {
-        background: #188CE8;
+        background: var(--accent-hover-color);
     }
 }
 
