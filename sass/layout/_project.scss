@@ -1,6 +1,7 @@
 .project__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -36,6 +37,10 @@
 
     .project__picture {
         width: 354px;
+    }
+
+    .project__list {
+        justify-content: flex-start;
     }
 }
 

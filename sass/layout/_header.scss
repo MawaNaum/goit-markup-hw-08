@@ -117,7 +117,8 @@
 
     .contact-list__item {
         font-weight: 500;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--second-color);
 
@@ -146,6 +147,15 @@
         .contact-list__link:focus & {
             fill: var(--accent-color);
         }
+    }
+
+    .contact-list__icon_envelope {
+        width: 14px;
+        height: 10px;
+    }
+    .contact-list__icon_smartphone {
+        width: 10px;
+        height: 14px;
     }
 }
 
@@ -177,5 +187,20 @@
 
         padding-top: 32px;
         padding-bottom: 32px;
+    }
+
+    .contact-list__item {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .contact-list__icon_envelope {
+        width: 16px;
+        height: 12px;
+    }
+    
+    .contact-list__icon_smartphone {
+        width: 10px;
+        height: 16px;
     }
 }

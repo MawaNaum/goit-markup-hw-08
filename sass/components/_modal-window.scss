@@ -1,13 +1,26 @@
 .modal {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 
     background-color: var(--third-color);
 
     padding: 40px;
+
 }
+    @media screen and (max-width: 479px) {
+        .modal {
+        margin-top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0); 
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+        .modal {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);  
+        }
+    }
 
 @media screen and (max-width: 1199px) {
     .modal {

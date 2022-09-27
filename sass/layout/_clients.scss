@@ -1,6 +1,7 @@
 .clients__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -21,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
     .clients__link {
         width: 210px;
     }
