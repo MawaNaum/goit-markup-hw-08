@@ -638,8 +638,8 @@ button {
     fill: var(--main-color);
   }
   .logo_header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 768px) {
