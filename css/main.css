@@ -264,23 +264,12 @@ button {
   position: absolute;
   background-color: var(--third-color);
   padding: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 479px) {
-  .modal {
-    margin-top: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
 @media screen and (min-width: 480px) {
-  .modal {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-@media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -560,20 +549,27 @@ button {
 
 .mobile-menu-contacts__item {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts__item {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .mobile-menu-contacts__link:hover,
+.mobile-menu-contacts__link:focus {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+}
 .mobile-menu-contacts__link {
   display: block;
   padding-bottom: 32px;
 }
 .mobile-menu-contacts__link:hover, .mobile-menu-contacts__link:focus {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }

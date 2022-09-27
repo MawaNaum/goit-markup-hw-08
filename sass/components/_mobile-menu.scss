@@ -81,11 +81,22 @@
     
 .mobile-menu-contacts__item {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--second-color);
 }
+
+@media screen and (min-width: 480px) {
+    .mobile-menu-contacts__item {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    .mobile-menu-contacts__link:hover,
+    .mobile-menu-contacts__link:focus {
+        font-size: 34px;
+        line-height: 1.18;
+    }
+}
+
 
 .mobile-menu-contacts__link {
     display: block;
@@ -94,12 +105,12 @@
     &:hover,
     &:focus {
         font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18;
         letter-spacing: 0.02em;
         color: var(--accent-color);
     }
 }
+
+
 
 .mobile-menu-social-network {
     display: flex;
