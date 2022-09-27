@@ -3,11 +3,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    
 }
 
 .clients__link {
     display: flex;
     height: 92px;
+    width: 210px;
     border: 1px solid;
     border-radius: 4px;
     justify-content: center;
@@ -22,11 +24,11 @@
     }
 }
 
-@media screen and (min-width: 480px) {
-    .clients__link {
-        width: 210px;
-    }
-}
+// @media screen and (min-width: 480px) {
+//     .clients__link {
+//         width: 210px;
+//     }
+// }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .clients__link {
