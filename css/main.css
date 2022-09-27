@@ -191,14 +191,19 @@ button {
 
 .filter__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px 8px;
-  margin-bottom: 40px;
-  width: 326px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter__list {
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+    max-width: 326px;
+  }
+}
 @media screen and (min-width: 768px) {
   .filter__list {
+    gap: 8px;
     justify-content: center;
     margin-bottom: 30px;
     width: auto;
@@ -1314,7 +1319,7 @@ screen
 
 .project__item {
   background: var(--third-color);
-  width: 450px;
+  width: 100%;
 }
 
 .project__link {
@@ -1328,10 +1333,18 @@ screen
 }
 
 .project__picture {
-  width: 450px;
-  height: 294px;
+  width: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .project__item {
+    width: 450px;
+  }
+  .project__picture {
+    width: 450px;
+    height: 294px;
+  }
+}
 @media screen and (min-width: 768px) {
   .project__item {
     width: 354px;

@@ -1,18 +1,23 @@
 .filter__list {
     display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .filter__list {
     flex-wrap: wrap;
     gap: 15px 8px;
     margin-bottom: 40px;
-    width: 326px;
+    max-width: 326px;
+}
 }
 
 @media screen and (min-width: 768px) {
     .filter__list {
-        justify-content: center;
-        margin-bottom: 30px;
-        width: auto;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: auto;
     }
-
 }
 
 @media screen and (min-width: 1200px) {

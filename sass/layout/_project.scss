@@ -7,7 +7,8 @@
 
 .project__item {
     background: var(--third-color);
-    width: 450px;
+    
+    width: 100%;
 }
 
 .project__link {
@@ -26,8 +27,18 @@
 }
 
 .project__picture {
-    width: 450px;
-    height: 294px;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .project__item {
+        width: 450px;
+    }
+
+    .project__picture {
+        width: 450px;
+        height: 294px;
+    }
 }
 
 @media screen and (min-width: 768px) {
