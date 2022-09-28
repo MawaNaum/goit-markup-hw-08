@@ -5,11 +5,16 @@
     gap: 30px;
     
 }
+@media screen and (max-width: 479px) {
+   .clients__item {
+    width: calc((100% - 30px)/2);
+} 
+}
 
 .clients__link {
     display: flex;
     height: 92px;
-    width: 210px;
+    width: 100%;
     border: 1px solid;
     border-radius: 4px;
     justify-content: center;
@@ -21,6 +26,12 @@
     &:hover,
     &:focus {
         border: 1px solid var(--accent-color);
+    }
+}
+
+@media screen and (min-width: 480px)  {
+    .clients__link {
+        width: 210px;
     }
 }
 

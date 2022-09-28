@@ -12,9 +12,9 @@
     align-items: center;
 }
 
-.footer__block:not(:last-child) {
-    margin-bottom: 60px;
-}
+// .footer__block:not(:last-child) {
+//     margin-bottom: 60px;
+// }
 
 @media screen and (min-width: 1200px) {
     .footer__block {
@@ -34,6 +34,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -144,7 +145,7 @@
     border-radius: 4px;
     height: 50px;
 
-    display: block;
+    // display: block;
 
     width: 100%;
 
