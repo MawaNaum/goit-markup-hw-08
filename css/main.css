@@ -1162,6 +1162,11 @@ screen
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__block {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__block {
     display: flex;
@@ -1264,9 +1269,14 @@ screen
   align-items: center;
 }
 
+.subscribe-form__label {
+  width: 100%;
+}
+
 .subscribe-form {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .subscribe-form__input-block {
